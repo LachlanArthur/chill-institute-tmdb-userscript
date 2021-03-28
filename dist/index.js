@@ -1,3 +1,11 @@
+// ==UserScript==
+// @name         TMDB Movie Search for Chill Institute
+// @version      1.0
+// @author       Cyykratahk
+// @match        https://chill.institute
+// @grant        none
+// ==/UserScript==
+
 (() => {
   // src/jsx-shim.ts
   function jsx(tagName, attributes, ...children) {
@@ -227,7 +235,7 @@
       const row = this.parentElement.closest("tr");
       row.style.backgroundImage = `linear-gradient(to bottom, var(--overlay-color) 0%, var(--overlay-color) 100%), url(${movie.backdrop_url})`;
       row.style.backgroundSize = "cover";
-      row.style.backgroundPosition = "top";
+      row.style.backgroundPosition = "center 20%";
       this.parentElement.classList.add("-hasinfo");
     } else {
       this.parentElement.insertAdjacentElement("afterbegin", /* @__PURE__ */ jsx("div", {
