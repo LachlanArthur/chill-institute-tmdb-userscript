@@ -1,0 +1,75 @@
+.content {
+	width: auto;
+}
+
+.Search .SearchResults table .SearchResult-Title,
+.Search .SearchResults table thead th:first-child {
+	padding-left: 20px;
+}
+
+.Search .SearchResults table .Actions,
+.Search .SearchResults table thead th:last-child {
+	padding-right: 20px;
+}
+
+.SearchResult-Title button.get-info {
+	font-size: inherit;
+}
+
+.SearchResult-Title button.get-info.-loading {
+	animation: spin infinite linear 1s;
+}
+
+@keyframes spin {
+	to { transform: rotate( 1turn ); }
+}
+
+.SearchResult-Title.-hasinfo > button[title] {
+	display: none;
+}
+
+html {
+	--overlay-color: #ececece6;
+}
+
+html.dark {
+	--overlay-color: #343434e6;
+}
+
+.SearchResult-Title img.poster {
+	vertical-align: top;
+}
+
+.SearchResult-Title .movie-info {
+	display: grid;
+	grid-template-columns: 92px auto;
+	gap: 20px;
+	white-space: normal;
+}
+
+.SearchResult-Title .movie-info p {
+	margin-top: 0;
+}
+
+.SearchResult-Title .movie-title-year {
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+
+.SearchResult-Title .movie-title {
+	font-weight: bold;
+}
+
+.SearchResult-Title .movie-rating,
+.SearchResult-Title .movie-genres,
+.SearchResult-Title .movie-language,
+.SearchResult-Title .movie-filename {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.SearchResult-Title .movie-filename {
+	opacity: 0.75;
+}
+
+linear-gradient(to bottom, #343434e6 0%,#343434e6 100%), url("https://image.tmdb.org/t/p/w1280/xFxk4vnirOtUxpOEWgA1MCRfy6J.jpg")
