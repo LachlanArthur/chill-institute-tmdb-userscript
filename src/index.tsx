@@ -58,7 +58,7 @@ on( app, 'click', 'button.get-info' )( async function ( e ) {
 		const row = this.parentElement!.closest( 'tr' )!;
 		row.style.backgroundImage = `linear-gradient(to bottom, var(--overlay-color) 0%, var(--overlay-color) 100%), url(${movie.backdrop_url})`;
 		row.style.backgroundSize = 'cover';
-		row.style.backgroundPosition = 'top';
+		row.style.backgroundPosition = 'center 20%';
 
 		this.parentElement!.classList.add( '-hasinfo' );
 	} else {
